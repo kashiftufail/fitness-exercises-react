@@ -1,8 +1,13 @@
 import React from 'react'
 
-const Exercises = () => {
+const Exercises = ({ exercises, setExercises, bodyPart }) => {
   return (
-    <div>Exercises</div>
+    <div>
+      {exercises.map((exr,index) => (
+        <p>{exr.name}</p>
+      ))
+      }
+      </div>
   )
 }
 
